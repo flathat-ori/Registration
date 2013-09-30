@@ -53,6 +53,7 @@
         <script type="text/javascript">
             app.initialize();
 			function capturePhoto(){
+				//cameraExport.getPicture = function(successCallback, errorCallback, options)
 				navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60});
 			};
 			function uploadPhoto(data){
@@ -81,7 +82,5 @@
 				// Do something
 			};
 		</script>
-		
-		
     </body>
 </html>

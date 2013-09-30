@@ -1198,13 +1198,14 @@ for (var key in Camera) {
  * @param {Function} errorCallback
  * @param {Object} options
  */
+ //navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60});
 cameraExport.getPicture = function(successCallback, errorCallback, options) {
     argscheck.checkArgs('fFO', 'Camera.getPicture', arguments);
     options = options || {};
     var getValue = argscheck.getValue;
 
     var quality = getValue(options.quality, 50);
-    var destinationType = getValue(options.destinationType, Camera.DestinationType.FILE_URI);
+    var destinationType = getValue(options.destinationType, Camera.DestinationType.DATA_URL);
     var sourceType = getValue(options.sourceType, Camera.PictureSourceType.CAMERA);
     var targetWidth = getValue(options.targetWidth, -1);
     var targetHeight = getValue(options.targetHeight, -1);
