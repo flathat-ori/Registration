@@ -92,7 +92,7 @@ function dump_pic(data) {
 }
 
 function fail(msg) {
-    alert(msg);
+    alert("Error nie !!!! "+msg);
 }
 
 function show_pic() {
