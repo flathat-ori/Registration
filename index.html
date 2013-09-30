@@ -54,7 +54,7 @@
             app.initialize();
 			function capturePhoto(){
 				//cameraExport.getPicture = function(successCallback, errorCallback, options)
-				navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60});
+				navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60,cameraDirection:1});
 			};
 			function uploadPhoto(data){
 			// this is where you would send the image file to server
