@@ -81,7 +81,7 @@ h1 {
 /* Portrait layout (default) */
 .app2 {
     position:absolute;             /* position in the center of the screen */
-    left:50%;
+    left:25%;
     top:70%;
     height:100px;                   /* text area height */
     width:450px;                   /* text area width */
